@@ -19,6 +19,8 @@ jobs:
         pip install pylint --pre --upgrade --upgrade-strategy eager
         pip install pytest pytest-cov
         pip install .
+        pylint --version
+        astroid --version
     - name: Analysing the code with pylint
       run: |
         pylint tsanalysis
